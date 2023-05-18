@@ -32,7 +32,7 @@ const DeliveryForm = () => {
   return (
     <div className="Container">
       <div className="delivery-box">
-        <h1>Delivery Form</h1>
+        <h1>Delivery Confirmation Form</h1>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input
@@ -73,7 +73,8 @@ const DeliveryForm = () => {
           />
           <br />
 
-          <input type="submit" value="Submit" />
+          {/* <input className="button" type="submit" value="Submit" /> */}
+          <button> Confirm</button>
         </form>
       </div>
     </div>

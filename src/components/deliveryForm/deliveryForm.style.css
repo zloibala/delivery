@@ -29,7 +29,17 @@
 .Container label {
   display: block;
 }
-
-button {
-  margin-top: 25px;
+input {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 2px;
 }
+
+.button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* button {
+  color: white;
+} */
