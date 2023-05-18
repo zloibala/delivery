@@ -6,6 +6,7 @@ const DeliveryForm = () => {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,6 +16,7 @@ const DeliveryForm = () => {
       name: name,
       address: address,
       city: city,
+      phone: phone,
     };
 
     // Call the onSubmit function from the parent component and pass the form data
@@ -24,6 +26,7 @@ const DeliveryForm = () => {
     setName("");
     setAddress("");
     setCity("");
+    setPhone("");
   };
 
   return (
@@ -57,6 +60,15 @@ const DeliveryForm = () => {
             id="city"
             value={city}
             onChange={(event) => setCity(event.target.value)}
+            required
+          />
+          <br />
+          <label htmlFor="phone number">Phone number:</label>
+          <input
+            type="text"
+            id="city"
+            value={phone}
+            onChange={(event) => setPhone(event.target.value)}
             required
           />
           <br />
