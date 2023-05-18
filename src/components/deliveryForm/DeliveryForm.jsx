@@ -12,12 +12,12 @@ const DeliveryForm = () => {
     event.preventDefault();
 
     // Create an object to store the form data
-    const formData = {
-      name: name,
-      address: address,
-      city: city,
-      phone: phone,
-    };
+    // const formData = {
+    //   name: name,
+    //   address: address,
+    //   city: city,
+    //   phone: phone,
+    // };
 
     // Call the onSubmit function from the parent component and pass the form data
     // onSubmit(formData);
