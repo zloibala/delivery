@@ -19,10 +19,7 @@ const DeliveryForm = () => {
     //   phone: phone,
     // };
 
-    // Call the onSubmit function from the parent component and pass the form data
-    // onSubmit(formData);
-
-    // Reset the form
+    // use state
     setName("");
     setAddress("");
     setCity("");
@@ -43,7 +40,6 @@ const DeliveryForm = () => {
             required
           />
           <br />
-
           <label htmlFor="address">Address:</label>
           <input
             type="text"
@@ -53,7 +49,6 @@ const DeliveryForm = () => {
             required
           />
           <br />
-
           <label htmlFor="city">City:</label>
           <input
             type="text"
@@ -71,8 +66,8 @@ const DeliveryForm = () => {
             onChange={(event) => setPhone(event.target.value)}
             required
           />
+          // require means - will not allow to skipp field
           <br />
-
           {/* <input className="button" type="submit" value="Submit" /> */}
           <button> Confirm</button>
         </form>
